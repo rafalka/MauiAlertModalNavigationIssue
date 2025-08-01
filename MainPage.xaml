@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAlertModalNavigationIssue.MainPage"
+             Title="Main Page">
+
+    <Grid RowDefinitions="*,*,Auto,Auto"
+          Margin="20" RowSpacing="20">
+        <Label x:Name="StateLabel" 
+               Grid.Row="0"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Button Text="Open Sub Page modally"
+                Grid.Row="2"
+                Clicked="OnOpenModalClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        <Button Text="Open Sub Page"
+                Grid.Row="3"
+                Clicked="OnOpenPageClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+    </Grid>
+
+</ContentPage>
