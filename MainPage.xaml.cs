@@ -12,6 +12,7 @@ public partial class MainPage
 
     private async Task ShowAlert()
     {
+        await Task.Delay(250);
         StateLabel.Text = "Alert showing!\nCan you see it?";
         await DisplayAlert("My alert", "Can you see this alert?", "Yes");
         StateLabel.Text = "Alert closed";
